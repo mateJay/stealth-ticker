@@ -1,0 +1,12 @@
+# 构建产物
+.build-cache/
+StealthTicker.app/
+dist/
+*.dmg
+
+# 图标中间产物
+AppIcon-1024.png
+AppIcon.iconset/
+
+# macOS
+.DS_Store
