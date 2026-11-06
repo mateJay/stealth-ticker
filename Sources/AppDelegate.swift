@@ -131,13 +131,13 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         popover.behavior = .transient
         popover.animates = false
         popover.contentViewController = quoteVC
-        quoteVC.loadViewIfNeeded()
+        _ = quoteVC.view
 
         southboundPopover = NSPopover()
         southboundPopover.behavior = .transient
         southboundPopover.animates = false
         southboundPopover.contentViewController = southboundVC
-        southboundVC.loadViewIfNeeded()
+        _ = southboundVC.view
         southboundVC.onRequestDetail = { [weak self] date in
             self?.loadTopStocks(date: date)
         }
